@@ -4,14 +4,14 @@ using System.Net;
 
 namespace DeckOfCardsAPI.Models
 {
-	public class DrawFiveDAL
+	public class ReshuffleDeckDAL
 	{
-        public static DrawFiveModel UserDrawFive()//Adjust here
+        public static ReshuffleDeckModel Reshuffle()//Adjust here
         {
             //adjust
             //setup
             string apiKey = Secret.apiKey;
-            string url = $"https://deckofcardsapi.com/api/deck/{apiKey}/draw/?count=5";
+            string url = $"https://deckofcardsapi.com/api/deck/{apiKey}/shuffle/";
 
             //request
             HttpWebRequest request = WebRequest.CreateHttp(url);
@@ -24,7 +24,7 @@ namespace DeckOfCardsAPI.Models
             //Adjust
             //Convert to C#
             //Install Newtonsoft.json
-            DrawFiveModel result = JsonConvert.DeserializeObject<DrawFiveModel>(json);
+            ReshuffleDeckModel result = JsonConvert.DeserializeObject<ReshuffleDeckModel>(json);
             return result;
         }
     }

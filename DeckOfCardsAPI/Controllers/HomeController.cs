@@ -15,7 +15,9 @@ public class HomeController : Controller
 
     public IActionResult DeckOfCards()
     {
-        return View();
+       ReshuffleDeckModel result = ReshuffleDeckDAL.Reshuffle();
+        return View(result);
+        
     }
 
     public IActionResult Result()

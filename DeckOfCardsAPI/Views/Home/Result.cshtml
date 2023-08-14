@@ -6,8 +6,8 @@
 {
         <p>@c.Value</p>
         <p>@c.Suit</p>
-        <img src ="@c.Images" />
-}
+        <img src ="@c.Images.Png" />
+}   
 }
 
 <form asp-method="post" asp-action="Result">
@@ -16,4 +16,8 @@
     <input type="submit" />
 </form>
 
+<form asp-method="post" asp-action="DeckOfCards" >
 <h1>Shuffle the deck?</h1>
+<br />
+<input type="submit" />
+</form>
