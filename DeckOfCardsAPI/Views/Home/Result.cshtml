@@ -1,0 +1,19 @@
+﻿@model DrawFiveModel
+
+<h1>Here is what you drew:</h1>
+@{
+    foreach(Card c in Model.Cards)
+{
+        <p>@c.Value</p>
+        <p>@c.Suit</p>
+        <img src ="@c.Images" />
+}
+}
+
+<form asp-method="post" asp-action="Result">
+    <h1>Draw again?</h1>
+    <br />
+    <input type="submit" />
+</form>
+
+<h1>Shuffle the deck?</h1>

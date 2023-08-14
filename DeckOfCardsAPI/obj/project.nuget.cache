@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "MmQC+XiyVioWxQ7eg6PBtqbdJfMzPx2WUWstyX9Xs+Zq2Ru2mIaJKRP6/b1S3oJLHQdDH7/7jCqUoaQTUiD3Kw==",
+  "success": true,
+  "projectFilePath": "/Users/fsverellen/Projects/DeckOfCardsAPI/DeckOfCardsAPI/DeckOfCardsAPI.csproj",
+  "expectedPackageFiles": [
+    "/Users/fsverellen/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
